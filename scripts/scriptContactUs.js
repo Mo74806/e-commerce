@@ -85,7 +85,15 @@ btn.addEventListener("click", function (e) {
   </div>`
     );
   } else {
-    alert("please verfiy your data");
+    var contactUsContainer = document.querySelector(".contact-us-container");
+    //contactUsContainer.children[0].classList.add("d-none");
+    contactUsContainer.insertAdjacentHTML(
+      "afterbegin",
+
+      `<div class="m-5 row justify-content-center">
+    *please validate your data*
+  </div>`
+    );
   }
 });
 
