@@ -70,7 +70,15 @@ btn.addEventListener("click", function (e) {
   </div>`
     );
   } else {
-    alert("please verfiy your data or maybe add items to your cart");
+      var purchesForm = document.querySelector(".contact-us-container");
+    //contactUsContainer.children[0].classList.add("d-none");
+    purchesForm.insertAdjacentHTML(
+      "afterbegin",
+
+      `<div class="m-5 row justify-content-center">
+    *please validate your data*
+  </div>`
+    );
   }
   cart = [];
   cartNumber.innerText = 0;
