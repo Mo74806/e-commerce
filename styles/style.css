@@ -485,10 +485,7 @@ ul.dropdown-cart li .item-right button {
   margin-bottom: 50px;
   font-size: smaller;
 }
-.contact-us-container input,
-.purches-form input {
-  border: 0px;
-}
+
 
 .contact-us-container input:hover,
 .purches-form input:hover {
