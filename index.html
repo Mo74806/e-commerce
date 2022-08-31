@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="./imgs/noun-dragon-2432835.svg">   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Dragons</title>
+    <script src="./scripts/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/script.js" defer></script>  
+  </head>
+  <body>
+<!-------------  nav bar ---------------->
+    <div class="fixed-top">
+      <div class="bg-dark date-bar m-0 p-0 d-none d-sm-block ">
+          <div class="container">
+            <p class="day-date">LOGIN or REGISTER | Novamber 27,2020</p>
+          </div>
+        </div>
+        <!-- main nav -->
+        <nav class="navbar  border-bottom border-0 navbar-expand-lg bg-light sticky-top">
+          <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html">
+              <img src="./imgs/noun-dragon-2432835.svg" class="fa-brands"></img>
+              Dragons
+            </a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"  href="./aboutUs.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./cotactUs.html">Contact US</a>
+                </li>
+              </ul>
+            </div>      
+            <!-- cart icon -->
+            <div class= "cart " >
+              <div class="button-circle cart-num"></div>
+              <i class="fa fa-thin fa-cart-shopping cart-nav"></i>
+            </div>
+            <div class="cart-list p-0 bg-light m-0 d-none"> 
+              <ul class="cart-list-item m-0 p-0" type="none">
+                  <!-- cart items -->
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </div>
+    
+    <!--------------- slider -------------->
+    <div class="grid slider-container container-fluid ">
+      <div class="row justify-content-center slider-area ">
+        <button id="slide1" onclick=previousSlide() class="btn col-1 justify-content-center m-0 p-0 border border-0  d-flex "><i class="align-self-center fa-solid fa-angle-left"></i></button>
+        <img id="slider" src="./imgs/nike1.webp" class="col-10 m-0 p-0 overflow-auto"/>
+        <button id="slide2" onclick=nextSlide() class="btn col-1 justify-content-center m-0 p-0 border border-0  d-flex "><i class="align-self-center fa-solid fa-angle-right"></i></button> 
+     </div>
+    </div>
+
+     <!-- category filter &categories -->
+    <div class="container p-5 ">
+      <h2 class="m-0 p-0 category-section-title">CATEGORIE</h2>
+      <small class="m-0 p-0">WHAT YOU WANT</small><br  >
+      <small class="m-0 p-0"> TO BUY</small> <br  >
+      <span class="dash m-0 p-0"></span>
+    </div>
+    <div class="container mb-5  grid  mt-1  ">
+      <div class="row categories-filter  justify-content-around">
+        <!-- category filter area -->
+      </div>
+      <section class="mt-5 section section--tight section--border">
+        <ul class="logo-soup"><li class="logo-soup__list-item"><img class="image logo-soup__image lazyloaded" alt="Cee Cee's Closet" data-sizes="100vw" data-srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/cee-cees-closet-small-1d6b515579404482342748f0b67ff6e09836a47b648250d8d1b00e2a24b29faa.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/cee-cees-closet-large-72b3934735d6d9c80ab6e49bb691f0a499d3796886616ef7730d992b64348ca6.png?quality=50 2x" sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/cee-cees-closet-small-1d6b515579404482342748f0b67ff6e09836a47b648250d8d1b00e2a24b29faa.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/cee-cees-closet-large-72b3934735d6d9c80ab6e49bb691f0a499d3796886616ef7730d992b64348ca6.png?quality=50 2x"><noscript><img sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/cee-cees-closet-small-1d6b515579404482342748f0b67ff6e09836a47b648250d8d1b00e2a24b29faa.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/cee-cees-closet-large-72b3934735d6d9c80ab6e49bb691f0a499d3796886616ef7730d992b64348ca6.png?quality=50 2x" alt="Cee Cee&#39;s Closet" class="image" /></noscript></li><li class="logo-soup__list-item"><img class="image logo-soup__image lazyloaded" alt="Nalata Nalata" data-sizes="100vw" data-srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/nalata-nalata-small-b5cd674cc9203997e3a72f2726c8aaa3d594a27c2f69001b4ad833939e9af5ce.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/nalata-nalata-large-f8dbfc224d70bad5ac812bb8cda3d1eb3b681d89c67593ef31e3948244d2db0f.png?quality=50 2x" sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/nalata-nalata-small-b5cd674cc9203997e3a72f2726c8aaa3d594a27c2f69001b4ad833939e9af5ce.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/nalata-nalata-large-f8dbfc224d70bad5ac812bb8cda3d1eb3b681d89c67593ef31e3948244d2db0f.png?quality=50 2x"><noscript><img sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/nalata-nalata-small-b5cd674cc9203997e3a72f2726c8aaa3d594a27c2f69001b4ad833939e9af5ce.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/nalata-nalata-large-f8dbfc224d70bad5ac812bb8cda3d1eb3b681d89c67593ef31e3948244d2db0f.png?quality=50 2x" alt="Nalata Nalata" class="image" /></noscript></li><li class="logo-soup__list-item"><img class="image logo-soup__image lazyloaded" alt="Kirrin Finch" data-sizes="100vw" data-srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/kirrin-finch-small-b85f000eede1716da6a496a95ff3836b300b5beaa57617ab834332b675ede0d6.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/kirrin-finch-large-5eac21f691ca33865f5379e3c929f0455f2c60eac456acde2ecb5e7e8cf0b6b6.png?quality=50 2x" sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/kirrin-finch-small-b85f000eede1716da6a496a95ff3836b300b5beaa57617ab834332b675ede0d6.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/kirrin-finch-large-5eac21f691ca33865f5379e3c929f0455f2c60eac456acde2ecb5e7e8cf0b6b6.png?quality=50 2x"><noscript><img sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/kirrin-finch-small-b85f000eede1716da6a496a95ff3836b300b5beaa57617ab834332b675ede0d6.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/kirrin-finch-large-5eac21f691ca33865f5379e3c929f0455f2c60eac456acde2ecb5e7e8cf0b6b6.png?quality=50 2x" alt="Kirrin Finch" class="image" /></noscript></li><li class="logo-soup__list-item"><img class="image logo-soup__image lazyloaded" alt="Tokyo Bike" data-sizes="100vw" data-srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/tokyo-bike-small-2295b7e1d183bae07eb36ad83451ec624cfe61bbec39e85877d40600f22115b2.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/tokyo-bike-large-f4cb9c07eeb99cf30df7d10cfbf2c8fa0881f55ff0291d17010dbca85a7f7b1b.png?quality=50 2x" sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/tokyo-bike-small-2295b7e1d183bae07eb36ad83451ec624cfe61bbec39e85877d40600f22115b2.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/tokyo-bike-large-f4cb9c07eeb99cf30df7d10cfbf2c8fa0881f55ff0291d17010dbca85a7f7b1b.png?quality=50 2x"><noscript><img sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/tokyo-bike-small-2295b7e1d183bae07eb36ad83451ec624cfe61bbec39e85877d40600f22115b2.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/tokyo-bike-large-f4cb9c07eeb99cf30df7d10cfbf2c8fa0881f55ff0291d17010dbca85a7f7b1b.png?quality=50 2x" alt="Tokyo Bike" class="image" /></noscript></li><li class="logo-soup__list-item"><img class="image logo-soup__image lazyloaded" alt="Meso Goods" data-sizes="100vw" data-srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/meso-goods-small-d5c7243d2e6e1e1677b5648f1e672701476c5df7d516a131013a46c7721c98b4.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/meso-goods-large-a0f1c9701d23d641e95638d1ce3d849b583a16f89b85b591a7d16307c483b577.png?quality=50 2x" sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/meso-goods-small-d5c7243d2e6e1e1677b5648f1e672701476c5df7d516a131013a46c7721c98b4.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/meso-goods-large-a0f1c9701d23d641e95638d1ce3d849b583a16f89b85b591a7d16307c483b577.png?quality=50 2x"><noscript><img sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/meso-goods-small-d5c7243d2e6e1e1677b5648f1e672701476c5df7d516a131013a46c7721c98b4.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/meso-goods-large-a0f1c9701d23d641e95638d1ce3d849b583a16f89b85b591a7d16307c483b577.png?quality=50 2x" alt="Meso Goods" class="image" /></noscript></li><li class="logo-soup__list-item"><img class="image logo-soup__image lazyloaded" alt="Coco and Breezy" data-sizes="100vw" data-srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/coco-and-breezy-small-3cc3c1f7d5c50000624adec29ce71dae453821ce3813f0e34b2d3351b5f2b4b2.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/coco-and-breezy-large-e7ffaba59d09afb9ecb7e12463cb72920817438c900b887209608c94fc9c9ec0.png?quality=50 2x" sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/coco-and-breezy-small-3cc3c1f7d5c50000624adec29ce71dae453821ce3813f0e34b2d3351b5f2b4b2.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/coco-and-breezy-large-e7ffaba59d09afb9ecb7e12463cb72920817438c900b887209608c94fc9c9ec0.png?quality=50 2x"><noscript><img sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/coco-and-breezy-small-3cc3c1f7d5c50000624adec29ce71dae453821ce3813f0e34b2d3351b5f2b4b2.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/coco-and-breezy-large-e7ffaba59d09afb9ecb7e12463cb72920817438c900b887209608c94fc9c9ec0.png?quality=50 2x" alt="Coco and Breezy" class="image" /></noscript></li><li class="logo-soup__list-item"><img class="image logo-soup__image lazyloaded" alt="Brooklyn Museum" data-sizes="100vw" data-srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/brooklyn-museum-small-3cbca35150e701329098cd95f21ec9388886479a5f781a515466b59d80d7b5bb.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/brooklyn-museum-large-8428fcfb62c3415f5088edcae30855d4a6488b2a38d15e2b3edf0e3c13e42d2d.png?quality=50 2x" sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/brooklyn-museum-small-3cbca35150e701329098cd95f21ec9388886479a5f781a515466b59d80d7b5bb.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/brooklyn-museum-large-8428fcfb62c3415f5088edcae30855d4a6488b2a38d15e2b3edf0e3c13e42d2d.png?quality=50 2x"><noscript><img sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/brooklyn-museum-small-3cbca35150e701329098cd95f21ec9388886479a5f781a515466b59d80d7b5bb.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/brooklyn-museum-large-8428fcfb62c3415f5088edcae30855d4a6488b2a38d15e2b3edf0e3c13e42d2d.png?quality=50 2x" alt="Brooklyn Museum" class="image" /></noscript></li><li class="logo-soup__list-item"><img class="image logo-soup__image lazyloaded" alt="Adore Me" data-sizes="100vw" data-srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/adore-me-small-b4e6488ccabc61cdaaf92d931a5b8a591a35d55982a796a5b582924a9563afb1.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/adore-me-large-7a7f06a74d88d7a5e019800da52ccc54334c96159f3761173c0c5cd37e03e38d.png?quality=50 2x" sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/adore-me-small-b4e6488ccabc61cdaaf92d931a5b8a591a35d55982a796a5b582924a9563afb1.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/adore-me-large-7a7f06a74d88d7a5e019800da52ccc54334c96159f3761173c0c5cd37e03e38d.png?quality=50 2x"><noscript><img sizes="100vw" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/adore-me-small-b4e6488ccabc61cdaaf92d931a5b8a591a35d55982a796a5b582924a9563afb1.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/adore-me-large-7a7f06a74d88d7a5e019800da52ccc54334c96159f3761173c0c5cd37e03e38d.png?quality=50 2x" alt="Adore Me" class="image" /></noscript></li></ul>
+      </section>
+      <section class="section section--tight section--border"></section>
+        <div class="categories d-none">
+          <div class="container p-5 ">
+            <h1 class="category-section-title m-0 p-0">CATEGORY NAME</h1><br  >
+            <span class="dash m-0 p-0"></span>
+          </div>
+          <div class="container-fluid grid p-5 m-0">
+            <div class="row  selected-category">
+              <!-- selected category product -->
+            </div>
+            <div class="grid"><div class="row justify-content-end"><div class="col-3 justify-self-end"><button class="show-more border border-0 background background-white" >Show More Products...</button></div></div></div>
+          </div>
+        </div>
+    </div>
+      
+    <!-- //go up button -->
+    <div class="button-up"> <a href="#" class="btn button-up"><i class="fa-solid fa-angles-up text-secondary"></i></a> </div>
+ 
+
+    <!-- //Footer -->
+    <footer class="card-footer "> 
+      <div class="" style="width:100%;">
+        <footer class="bg-dark text-center text-white">
+          <div class="grid row justify-content-around pt-4 mt-3">
+            <div class="col-lg-3">
+              <h4> contact Info</h4>
+              <p>46 Hassan Mohamed st,</p>
+              <p>Giza,Egypt</p>
+              <p>01248582132 </p>
+              <p>m.khaled201774@gmail.com</p>
+            </div>
+            <div class="col-lg-3 mt-3">
+              <h4>Useful Links</h4>
+              <p>Support</p>
+              <p>Privacy Policy</p>
+              <p>Terms &amp; Conditions</p>
+              <p>Affiliate Program</p>
+              <p>Careers</p>
+            </div>            
+            <div class="col-lg-3 align-self-center mt-3">
+              <h4>Get In Touch</h4>
+              <div id="footer-contact ">
+                <div id="footer-form">
+                  <i id="email-icon" class="fa-solid fa-envelope"></i>
+                  <input type="text" placeholder="Enter your email" name="" id="footer-text">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          
+        <div class="container p-4 pb-0">
+          <section class="mb-4">
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"  ><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"  ><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"  ><i class="fab fa-google"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"  ><i class="fab fa-instagram"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"  ><i class="fab fa-linkedin-in"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"  ><i class="fab fa-github"></i></a>
+          </section>
+        </div>
+      <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright:
+          <a class="text-white" href="https://mdbootstrap.com/">          <img src="./imgs/noun-dragon-2432835.svg" class="fa-brands"></img>
+            Dragon.com
+          </a>
+        </div>
+      </footer>
+    </footer> 
+    
+
+  </body> 
+</html>

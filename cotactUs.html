@@ -1,0 +1,181 @@
+<!-- ./header.5f6dfb94025651ed0793bc80446b4f75.svg -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="./imgs/noun-dragon-2432835.svg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Dragons</title>
+  </head>
+  <body>
+    <div class="fixed-top">
+      <!-- main nav -->
+      <nav class="navbar  border-bottom border-0 navbar-expand-lg bg-light sticky-top">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html">
+            <img src="./imgs/noun-dragon-2432835.svg" class="fa-brands"></img>
+            Dragons
+          </a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./aboutUs.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./cotactUs.html">Contact US</a>
+              </li>
+            </ul>
+          </div>      
+            <!-- cart icon -->
+          <div class= "cart " >
+            <div class="button-circle cart-num"></div>
+            <i class="fa fa-thin fa-cart-shopping cart-nav"></i>
+          </div>
+          <div class="cart-list p-0 bg-light m-0 d-none"> 
+            <ul class="cart-list-item m-0 p-0" type="none">
+                <!-- cart items -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container justify-content-center align-items-center contact-us-starter grid ">
+      <div class=" row  m-5 p-5">
+        <div class="col-lg-8 col-md-12">
+          <img src="./imgs/header.5f6dfb94025651ed0793bc80446b4f75.svg " alt="">
+        </div>
+        <div class="col-lg-4  align-self-center text-center">
+          <h1>Be In Touch </h1>
+          <p>send your feeedback to us now</p>
+          <a class="btn btn-outline-danger btn-form" >Get Started</a>
+        </div>
+      </div>
+    </div>
+    <!-- form area -->
+    <div class="container  d-none  py-5 mt-5 contact-us-container grid justify-content-center ">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 ">
+          <form  action="" id="form">
+            <!-- name -->
+            <div class="grid">
+              <div class="row">
+                <div class="col-lg-6 mb-3">
+                  <label for="fname" class="form-label">First Name</label>
+                  <input type="text" id="fname" class="form-control fname" name="fname" placeholder="Enter your First Name">
+                  <div class="fname-valid-feedback feedback-valid d-inline d-none">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-3"> 
+                  <label for="lname" class="form-label">First Name</label>
+                  <input type="text" id="lname" class="form-control fname" name="lname" placeholder="Enter your Last Name">
+                  <div class="lname-valid-feedback feedback-valid d-inline d-none">
+                    Looks good!
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- mail -->
+            <div class="mb-3">
+              <label for="mail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="mail" name="mail" aria-describedby="emailHelp" placeholder="enter your mail">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              <div id="emailHelp" class="form-text">example@something.com</div>
+            </div>
+            <div class="mail-valid-feedback feedback-valid d-inline d-none">
+              Looks good!
+            </div>
+            <!-- password -->
+            <div class="mb-3">
+              <label for="phone"  name="phone" class="form-label">Phone</label>
+              <input type="text" class="form-control" id="phone" placeholder="enter your phone">
+                <span id="passwordHelpInline" class="form-text">
+                  eg:01XXXXXXXXX
+                </span>
+                <div class="phone-valid-feedback feedback-valid  d-none">
+                  Looks good!
+                </div>
+            </div>
+                   <!-- message -->
+            <div class="mb-3">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea class="form-control" name="message" id="message" rows="5"></textarea>
+              <div class="invalid-feedback">
+                Please enter your message
+              </div>
+              <div class="message-valid-feedback feedback-valid  d-none">
+                Looks good!
+              </div>
+            </div>
+            <button type="submit" class="mb-3 form-control btn-submit btn btn-success"> SEND YOUR MESSAGE.<i class="fa-solid fa-paper-plane"> </i></button>
+          </form>
+        </div> 
+      </div>
+    </div>
+    <div class="button-up"> <a href="#" class="btn button-up"><i class="fa-solid fa-angles-up text-secondary"></i></a> </div>
+
+    <!-- //Footer -->
+    <footer class="card-footer "> 
+      <div class="" style="width:100%;">
+        <footer class="bg-dark text-center text-white">
+          <div class="grid row justify-content-around pt-4 mt-3">
+            <div class="col-lg-3">
+              <h4> contact Info</h4>
+              <p>46 Hassan Mohamed st,</p>
+              <p>Giza,Egypt</p>
+              <p>01248582132 </p>
+              <p>m.khaled201774@gmail.com</p>
+            </div>
+            <div class="col-lg-3 mt-3">
+              <h4>Useful Links</h4>
+              <p>Support</p>
+              <p>Privacy Policy</p>
+              <p>Terms &amp; Conditions</p>
+              <p>Affiliate Program</p>
+              <p>Careers</p>
+            </div>            
+            <div class="col-lg-3 align-self-center mt-3">
+              <h4>Get In Touch</h4>
+              <div id="footer-contact ">
+                <div id="footer-form">
+                  <i id="email-icon" class="fa-solid fa-envelope"></i>
+                  <input type="text" placeholder="Enter your email" name="" id="footer-text">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          
+        <div class="container p-4 pb-0">
+          <section class="mb-4">
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"  ><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"  ><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"  ><i class="fab fa-google"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"  ><i class="fab fa-instagram"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"  ><i class="fab fa-linkedin-in"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"  ><i class="fab fa-github"></i></a>
+          </section>
+        </div>
+      <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright:
+          <a class="text-white" href="https://mdbootstrap.com/">          <img src="./imgs/noun-dragon-2432835.svg" class="fa-brands"></img>
+            Dragon.com
+          </a>
+        </div>
+      </footer>
+    </footer>   
+    <script src="./scripts/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/scriptContactUs.js"></script>
+  </body>
+</html>
