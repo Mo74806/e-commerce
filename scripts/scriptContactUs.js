@@ -7,7 +7,7 @@ var btn = document.querySelector(".btn-submit");
 var fnameFlag, lnameFlag, phoneFlag, mailFlag, messageFlag;
 
 //------------------------form verfication---------------------------------
-fname.addEventListener("input", function (e) {
+fname.addEventListener("change", function (e) {
   var feedback = document.querySelector(".fname-valid-feedback");
   var regx = /[a-zA-Z]/;
   regx.test(e.target.value)
@@ -85,7 +85,15 @@ btn.addEventListener("click", function (e) {
   </div>`
     );
   } else {
-    alert("please verfiy your data");
+    var contactUsContainer = document.querySelector(".contact-us-container");
+    //contactUsContainer.children[0].classList.add("d-none");
+    contactUsContainer.insertAdjacentHTML(
+      "afterbegin",
+
+      `<div class="m-5 row justify-content-center">
+    *please validate your data*
+  </div>`
+    );
   }
 });
 

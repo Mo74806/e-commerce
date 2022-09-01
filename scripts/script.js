@@ -1,6 +1,6 @@
 var productsCart = document.querySelectorAll(".btn-add");
 var cart = [];
-var cart = JSON.parse(localStorage.getItem("cart")) || [];
+
 var cartNumber = document.querySelector(".cart-num");
 cartNumber.innerText = getCookie("cartNum") || 0;
 var categories = [
@@ -8,7 +8,18 @@ var categories = [
   { name: "mobile", imagepath: "./imgs/phones.jpg" },
   { name: "clothes", imagepath: "./imgs/clothes.jpg" },
 ];
-RenderCategories(".categories-filter"); //render the category filter area
+var selectedCategory = document.querySelector(`.categories-filter`);
+for (var i = 0; i < categories.length; i++) {
+  selectedCategory.insertAdjacentHTML(
+    "beforeend",
+    `<div id="${categories[i].name}"class="card-category card col-lg-2 m-2 p-0 border border-0" style="width: 20rem">
+      <a class="link" href="#category"><img  src=${categories[i].imagepath} class="card-img-top category-img" alt="..."></a>
+      <div class="card-body category-body">
+        <h5 class="card-title category-title">${categories[i].name}</h5>
+      </div>
+    </div>`
+  );
+}
 var data = [
   {
     id: 1,
@@ -226,14 +237,7 @@ var data = [
 {
   var slideIndex = 1;
   var slides = document.querySelectorAll("#slider"); //hold the image container
-  var arr = [
-    "imgs/nike1.webp",
-    "imgs/nike2.webp",
-    "imgs/4.jpg",
-    "https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/photo-1416339442236-8ceb164046f8-1140x640.jpeg",
-    "https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-  ]; //the images array
+  var arr = ["imgs/nike1.webp", "imgs/nike2.webp"]; //the images array
 
   function previousSlide() {
     slideIndex -= 1;
@@ -307,20 +311,7 @@ function categoryAllProducts(categoryName, number, selectedArea) {
 }
 
 //-------------------------->render categories filter area <----------------------------------------
-function RenderCategories(selectedArea) {
-  var selectedCategory = document.querySelector(`${selectedArea}`);
-  for (var i = 0; i < categories.length; i++) {
-    selectedCategory.insertAdjacentHTML(
-      "beforeend",
-      `<div id="${categories[i].name}"class="card-category card col-lg-2 m-2 p-0 border border-0" style="width: 20rem">
-      <img src=${categories[i].imagepath} class="card-img-top category-img" alt="...">
-      <div class="card-body category-body">
-        <h5 class="card-title category-title">${categories[i].name}</h5>
-      </div>
-    </div>`
-    );
-  }
-}
+
 //------------------------->show the products of the cart<---------------------------
 function showCart(cart1) {
   var cartlist = document.querySelector(".cart-list-item");

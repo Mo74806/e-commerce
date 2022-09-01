@@ -479,15 +479,14 @@ ul.dropdown-cart li .item-right button {
     rgba(166, 224, 214, 0.25) 22.4%
   );
 }
+.link {
+  overflow: hidden;
+}
 .contact-us-container form,
 .purches-form form {
   margin-top: 50px;
   margin-bottom: 50px;
   font-size: smaller;
-}
-.contact-us-container input,
-.purches-form input {
-  border: 0px;
 }
 
 .contact-us-container input:hover,
