@@ -70,7 +70,11 @@ btn.addEventListener("click", function (e) {
   </div>`
     );
   } else {
+<<<<<<< HEAD
     var purchesForm = document.querySelector(".contact-us-container");
+=======
+      var purchesForm = document.querySelector(".contact-us-container");
+>>>>>>> 4cf5ea10a03d835ce17469bde814c292a604a089
     //contactUsContainer.children[0].classList.add("d-none");
     purchesForm.insertAdjacentHTML(
       "afterbegin",
